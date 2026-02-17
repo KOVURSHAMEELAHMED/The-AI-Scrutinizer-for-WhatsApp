@@ -1,0 +1,2 @@
+web: gunicorn fake_news_detector.wsgi:application
+worker: celery -A fake_news_detector worker --loglevel=info
